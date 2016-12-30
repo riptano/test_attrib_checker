@@ -6,7 +6,7 @@ setup(
     packages=find_packages(),
     entry_points={
         'nose.plugins': ['test_attrib_checker = '
-                         'test_attrib_checker:TestAttribChecker']
+                         'test_attrib_checker.test_attrib_checker:TestAttribChecker']
     },
     install_requires=['nose'],
 )

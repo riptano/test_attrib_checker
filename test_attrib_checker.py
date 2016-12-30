@@ -11,7 +11,7 @@ class _ClassCheckingSelector(selector.Selector):
             test_set_on_cls = '__test__' in cls.__dict__
             if falsy_test and not test_set_on_cls:
                 raise RuntimeError(
-                    "__test__ is falsey on {cls}'s superclass, but unset "
+                    "__test__ is falsy on {cls}'s superclass, but unset "
                     "on {cls}. The installed {module_name} module requires "
                     "__test__ to be explicitly set on classes removed from "
                     "discovery in this way.".format(
@@ -33,7 +33,7 @@ class TestAttribChecker(plugins.Plugin):
 
     def configure(self, options, conf):
         """
-        Noop conifigure method -- this plugin is always on.
+        Noop configure method -- this plugin is always on.
         """
         pass
 
